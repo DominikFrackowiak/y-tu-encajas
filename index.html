@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="author"
+			content="illustration, video-animation and design: Marcin Chylinski, HTML, CSS and JavaScript: Dominik Frackowiak"
+		/>
+		<meta
+			name="description"
+			content="El proyecto busca facilitar la construcción de narrativas desde un enfoque decolonial e interseccional y espacios libres de prácticas excluyentes y racistas ¡Participa!"
+		/>
+		<script src="https://kit.fontawesome.com/097d9616c9.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script type="text/javascript" src="tagcloud.jquery.js"></script>
+		<link rel="stylesheet" href="favicon.ico" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>¿Y tú encajas? (Des)iguales. Una mirada caleidoscópica.</title>
+	</head>
+	<body>
+	
+			<!-- NAVIGATION-->
+
+			<div class="nav-icons">
+				       <i class="nav-icon nav-icon__hamburger fa fa-bars" aria-hidden="true"></i>
+           <i class="nav-icon nav-icon__close fas fa-times"></i>
+		</div>
+			
+			<nav class="nav nav-desktop">
+				<ul>
+					<li>
+						<a href="#inicio">Inicio</a>
+						<hr />
+					</li>
+					<li>
+						<a href="#mapa">Mapa Yincana</a>
+						<hr />
+					</li>
+					<li>
+						<a href="#nube">Nube de palabras</a>
+						<hr />
+					</li>
+					<li>
+						<a href="#cuidados" class="etapas cuidados">Etapas</a>
+						<hr class="etapas__hr" />
+						<ul class="etapas__ul">
+							<li>
+								<a class="etapas__link active" href="#cuidados">Cuidados</a>
+							</li>
+							<li>
+								<a class="etapas__link" href="#educacion">Educación</a>
+							</li>
+							<li>
+								<a class="etapas__link" href="#sanidad">Sanidad</a>
+							</li>
+							<li>
+								<a class="etapas__link" href="#cultura">Cultura</a>
+							</li>
+							<li>
+								<a class="etapas__link" href="#vivienda">Vivienda</a>
+							</li>
+							<li>
+								<a class="etapas__link" href="#opinion">¿Y tú qué opinas?</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#nosotros">Quiénes somos</a>
+						<hr />
+					</li>
+					<li>
+						<a href="#contacto">Contacto</a>
+						<hr />
+					</li>
+				</ul>
+			</nav>
+
+			<nav class="nav-mobile">
+                
+                <a class="nav-mobile__link" href="#mapa">Mapa Yincana</a>
+                <a class="nav-mobile__link" href="#nube">Nube de palabras</a>
+                <a class="nav-mobile__link nav-mobile__link--etapas" href="#">Etapas</a>
+                <a class="nav-mobile__link nav-mobile__link--red" href="#cuidados">Cuidados</a>
+                <a class="nav-mobile__link nav-mobile__link--red" href="#educacion">Educación</a>
+                <a class="nav-mobile__link nav-mobile__link--red" href="#sanidad">Sanidad</a>
+                <a class="nav-mobile__link nav-mobile__link--red" href="#cultura">Cultura</a>
+                <a class="nav-mobile__link nav-mobile__link--red" href="#vivienda">Vivienda</a>
+                <a class="nav-mobile__link nav-mobile__link--red" href="#opinion">¿Y tú qué opinas?</a>
+                <a class="nav-mobile__link" href="#nosotros">Quiénes somos</a>
+                <a class="nav-mobile__link" href="#contacto">Contacto</a>
+  </nav>
+		<div class="sections-wrapper">
+        <!-- SECTION HERO VIDEO -->
+        <section id="inicio" class="hero-video">
+
+            <video class="hero-video__video" autoplay muted loop id="main-video">
+                <source src="./video/web.mp4" type="video/mp4">
+            </video>
+            
+            <h2 class="hero-video__header"><span class="span-ish">?</span>Y tú encajas?</h2>
+            <a class="hero-video__more-link" href="#more-info">&gt &gt &gt more info &lt &lt &lt</a>
+												
+        </section>
+	<script src="./js/script.js"></script>
+	</body>
+</html>

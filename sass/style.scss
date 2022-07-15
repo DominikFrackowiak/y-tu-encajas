@@ -1,0 +1,152 @@
+@import 'fonts';
+@import 'colors';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+span.span-ish {
+	display: inline-block;
+	transform: rotate(-180deg);
+}
+
+//NAV-ICONS
+.nav-icons {
+	display: block;
+	position: fixed;
+	top: 25px;
+	right: 20px;
+	z-index: 5;
+	width: 25px;
+	height: 25px;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+
+.nav-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 25px;
+
+	&__hamburger {
+		display: block;
+		color: #fff;
+	}
+
+	&__close {
+		display: none;
+		color: #2d348c;
+	}
+}
+
+// NAV
+.nav {
+	&-desktop {
+		display: none;
+	}
+
+	&-mobile {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		max-height: 900px;
+		width: 100%;
+		background-color: rgba(255, 255, 255, 0.9);
+		transform: translateX(-120%);
+		transition: transform 0.9s;
+		font-family: 'Galano Grotesque Regular';
+		font-size: 18px;
+
+		&.active {
+			transform: translateX(0);
+			z-index: 3;
+		}
+
+		&__link {
+			width: 60%;
+			margin-bottom: 13px;
+			text-align: left;
+			text-decoration: none;
+			cursor: pointer;
+			color: $darkblue;
+
+			&:hover {
+				color: $lightblue;
+			}
+
+			&--etapas {
+				cursor: default;
+			}
+
+			&--red {
+				color: $red;
+				margin-left: 30px;
+
+				&:hover {
+					color: $lightred;
+				}
+			}
+		}
+	}
+}
+
+//SECTION HERO VIDEO
+.hero-video {
+	position: relative;
+	z-index: 0;
+	width: 100%;
+	height: 100vh;
+	max-height: 900px;
+	overflow-x: hidden;
+	background-color: #2d348c;
+
+	&__video {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 250%;
+		z-index: 0;
+	}
+
+	&__header {
+		position: absolute;
+		top: 20%;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		font-family: '1,617';
+		font-size: 32px;
+		color: white;
+		font-weight: normal;
+		z-index: 1;
+	}
+
+	&__more-link {
+		position: absolute;
+		bottom: 20%;
+		left: 50%;
+		transform: translateX(-50%);
+		font-family: '1,617';
+		color: white;
+		font-size: 17px;
+		transition: transform 0.4s;
+
+		&:hover {
+			transform: translateX(-50%) scale(1.05);
+		}
+	}
+}
