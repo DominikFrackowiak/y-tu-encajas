@@ -1,21 +1,21 @@
 @font-face {
   font-family: "1,617";
-  src: url("../Fonts/1,617.ttf");
+  src: url("../fonts/1,617.ttf");
 }
 
 @font-face {
   font-family: "Galano Grotesque Medium";
-  src: url("../Fonts/GalanoGrotesqueMedium.otf");
+  src: url("../fonts/GalanoGrotesqueMedium.otf");
 }
 
 @font-face {
   font-family: "Galano Grotesque Semibold";
-  src: url("../Fonts/GalanoGrotesqueSemiBold.otf");
+  src: url("../fonts/GalanoGrotesqueSemiBold.otf");
 }
 
 @font-face {
   font-family: "Galano Grotesque Regular";
-  src: url("../Fonts/GalanoGrotesqueRegular.otf");
+  src: url("../fonts/GalanoGrotesqueRegular.otf");
 }
 
 * {
