@@ -64,7 +64,7 @@ span.span-ish {
 		height: 100vh;
 		max-height: 900px;
 		width: 100%;
-		background-color: rgba(255, 255, 255, 0.9);
+		background-color: rgba(255, 255, 255, 0.95);
 		transform: translateX(-120%);
 		transition: transform 0.9s;
 		font-family: 'Galano Grotesque Regular';
@@ -142,7 +142,7 @@ span.span-ish {
 		transform: translateX(-50%);
 		font-family: '1,617';
 		color: white;
-		font-size: 17px;
+		font-size: 16px;
 		transition: transform 0.4s;
 
 		&:hover {
